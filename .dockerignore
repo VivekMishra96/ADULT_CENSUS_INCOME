@@ -1,0 +1,10 @@
+artifact
+logs
+notebook
+prediction
+*.egg-info
+.env
+data_dump.py
+demo.py
+Adult Census .ipynb
+saved_models
