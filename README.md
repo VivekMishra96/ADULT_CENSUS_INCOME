@@ -140,10 +140,9 @@ Here we have define cycle of machine learning model-
 
 
 Pipeline
-```
+
 Here we made two file one is for training our model and onother for batch prediction- training_pipeline.py - In this file we have just write our code in sequance like we have mention data_ingestion phase first then validation than transformation and so on. batch_prediction.py - In this file we have just made prediction of given file and send back to prediction directory and save it their.
 
-```
 ```
 Deployement we have used docker here and with the help of github action we have made our work automate after deployement we can access our airflow so that we can shedule our training pipeline and batch_prection pipeline from their.
 ```
