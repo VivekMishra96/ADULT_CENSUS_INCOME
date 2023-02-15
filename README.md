@@ -111,7 +111,7 @@ step4 - entity
 Here we have two file one is artifact_entity.py and another is config_entity.py config_entity.py - Here we store some important input like what all input it takes while initiating our class example in data_ingestion.py file it will take training_pipeline class which help us to make artifact directory in current directory and also store some pre define path. artifact_entity.py - Here we store output of our component files like generally we store file path and all here.
 ```
 step4 - Component
-```
+
 Here we have define cycle of machine learning model-
 
 1.Data_ingestion.py: In this phase we will get our data from mongodb database with the help of get_datafram_as_df function which we have define in "utils.py" and after getting data we perform some cleaning of data then we will save our data in csv file in "feature store" inside "dataingestion" directory and here we also done splitting our data in train and test so this data can further we use for data validation and transformation and all phase so we have also save our train and test data in train.py and test.py file in "dataset" directory which is inside of "dataingestion" directory inside artifact directory.
