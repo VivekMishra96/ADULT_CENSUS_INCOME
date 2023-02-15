@@ -94,7 +94,7 @@ python setup.py install
 ```
 
 step1 - data_dump.py
-```
+
 we have creat file name data_dump.py in which we have established connection with mongodb database and dump data in database.
 ```
 
@@ -107,7 +107,7 @@ step3 - Census
 In this folder we have creat our Components folder and entity folder and pipeline folder.
 ```
 step4 - entity
-```
+
 Here we have two file one is artifact_entity.py and another is config_entity.py config_entity.py - Here we store some important input like what all input it takes while initiating our class example in data_ingestion.py file it will take training_pipeline class which help us to make artifact directory in current directory and also store some pre define path. artifact_entity.py - Here we store output of our component files like generally we store file path and all here.
 ```
 step4 - Component
@@ -137,12 +137,10 @@ Here we have define cycle of machine learning model-
 6.Model_pusher.py: Here we just save our new model and all transformation object which will help us in prediction.
 
 ```
-
-
-Pipeline
+step5-Pipeline
 
 Here we made two file one is for training our model and onother for batch prediction- training_pipeline.py - In this file we have just write our code in sequance like we have mention data_ingestion phase first then validation than transformation and so on. batch_prediction.py - In this file we have just made prediction of given file and send back to prediction directory and save it their.
-
 ```
+
 Deployement we have used docker here and with the help of github action we have made our work automate after deployement we can access our airflow so that we can shedule our training pipeline and batch_prection pipeline from their.
 ```
