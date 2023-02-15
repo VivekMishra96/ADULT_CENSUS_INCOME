@@ -89,8 +89,6 @@ Tos stop docker conatiner
 docker stop <container_id>
 ```
 
-
-
 ```
 python setup.py install
 ```
@@ -138,9 +136,12 @@ Here we have define cycle of machine learning model-
 
 6.Model_pusher.py: Here we just save our new model and all transformation object which will help us in prediction.
 
-```
+
+
+
 Pipeline
 ```
+
 Here we made two file one is for training our model and onother for batch prediction- training_pipeline.py - In this file we have just write our code in sequance like we have mention data_ingestion phase first then validation than transformation and so on. batch_prediction.py - In this file we have just made prediction of given file and send back to prediction directory and save it their.
 
 ```
